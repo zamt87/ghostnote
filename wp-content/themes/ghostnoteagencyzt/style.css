@@ -1,0 +1,216 @@
+/* 
+Theme Name: Ghost Note Agency Test
+Author: Zam Tual
+Version: 1.0
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Maven Pro", sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #3c362d;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #6270bf;
+}
+
+.site-title {
+  margin: 100.5px 0 100.5px;
+  text-align: center;
+}
+
+h1.test-title {
+  font-size: 34px;
+}
+
+h1.article-title {
+  font-size: 18px;
+}
+
+.navbar {
+  padding: 21.5px 0 31.5px;
+  background: #617ddb;
+  color: rgb(226, 231, 248);
+}
+
+.navbar a {
+  color: rgb(226, 231, 248);
+  font-size: 14px;
+}
+
+.navbar-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+ul.navbar-links li {
+  display: inline-block;
+  margin-right: 3.5%;
+}
+
+ul.navbar-links {
+  width: 906px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+li.navbar-link-item.vert-line {
+  position: relative;
+  margin-right: 2%;
+}
+
+.vert-line-actual {
+  border-right: 1px solid #fff;
+  height: 22px;
+  position: relative;
+  bottom: -6px;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 68px auto;
+  border: 1px solid #3c362d;
+  min-height: 900px;
+}
+
+.cards_wrap {
+  display: grid;
+  grid-template-columns: 1fr repeat(12, minmax(auto, 75.5px)) 1fr;
+}
+
+.cards_wrap_inner {
+  grid-column: 2 / span 12;
+  margin-top: 38px;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 290px));
+  grid-gap: 0px 18px;
+}
+
+.card_item {
+  grid-column-end: span 1;
+  border: 1px solid rgb(221, 218, 214);
+  margin-bottom: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+.card_inner {
+  padding: 10px;
+  min-height: 230px;
+}
+
+.card_item:hover {
+  box-shadow: 0px 2px 10px -3px #888888;
+  transform: translate(-2px);
+}
+
+.card_top {
+  width: 100%;
+  padding: 10px;
+  color: #6270bf;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.card_bottom {
+  padding: 7px 10px 10px;
+  color: #3c362d !important;
+  min-height: 168px;
+}
+
+.card_content {
+  position: relative;
+}
+
+.card_read-more {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #6270bf !important;
+  font-size: 12px;
+  position: absolute;
+  bottom: 16px;
+  right: 23px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline;
+}
+
+#header {
+  display: none;
+}
+
+#footer {
+  display: none;
+}
+
+@media only screen and (max-width: 1224px) {
+  .navbar-inner {
+    width: 95%;
+  }
+
+  .wrapper {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  ul.navbar-links {
+    text-align: center;
+    width: 78%;
+  }
+
+  .cards_wrap {
+    grid-gap: 20px;
+  }
+
+  .cards_wrap_inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card_item {
+    grid-column-end: span 1;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  ul.navbar-links li {
+    margin-right: 1.5%;
+  }
+
+  .card_item {
+    grid-column-end: span 2;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  ul.navbar-links {
+    width: 100%;
+  }
+
+  ul.navbar-links li {
+    margin-right: 1%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  ul.navbar-links {
+    font-size: 11px;
+  }
+
+  ul.navbar-links a {
+    font-size: 11px;
+  }
+}
