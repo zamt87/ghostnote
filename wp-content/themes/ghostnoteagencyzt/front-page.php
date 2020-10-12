@@ -38,6 +38,9 @@ get_header();
                                             <div class="card_top">
                                                 <?php 
                                                     $categories = get_the_category();
+                                                    echo '<prev>';
+                                                        
+                                                    echo '<prev>';
                                                     if (!empty($categories)){
                                                         foreach($categories as $category){
                                                             echo $category->name . ' ';
@@ -50,13 +53,9 @@ get_header();
                                                 <div class="card_title">
                                                     <h1 class="article-title"><?php the_title(); ?></h1>
                                                 </div>
-                                                
-                                                <div class="card_content">
-                                                    
+                                                <div class="card_content"> 
                                                 </div>
-                            
                                             </div>
-                                                   
                                             <span class="card_read-more hide">
                                                 Read More
                                             </span>
